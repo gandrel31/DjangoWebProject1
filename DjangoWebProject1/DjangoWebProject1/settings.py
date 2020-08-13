@@ -17,7 +17,7 @@ import posixpath
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
 # Quick-start development settings - unsuitable for production
-# See https://docs.djangoproject.com/en/2.1/howto/deployment/checklist/
+# See https://docs.djangoproject.com/en/2.1/howto/deployment/checklist/   
 
 # SECURITY WARNING: keep the secret key used in production secret!
 SECRET_KEY = '10461365-dc5c-4e76-9829-179d5faee05f'
@@ -25,8 +25,12 @@ SECRET_KEY = '10461365-dc5c-4e76-9829-179d5faee05f'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
+<<<<<<< HEAD
 ALLOWED_HOSTS = ['*']
 
+=======
+ALLOWED_HOSTS = ['gandrel31.eu.pythonanywhere.com', 'localhost']
+>>>>>>> 6c5429191923c2730b084e09d59955990128d6ba
 
 # Application references
 # https://docs.djangoproject.com/en/2.1/ref/settings/#std:setting-INSTALLED_APPS

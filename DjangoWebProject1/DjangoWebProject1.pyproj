@@ -59,7 +59,9 @@
   <ItemGroup>
     <Content Include="app\templates\app\register.html" />
     <Content Include="requirements.txt" />
-    <Content Include="db.sqlite3" />
+    <Content Include="db.sqlite3">
+      <Publish>True</Publish>
+    </Content>
     <Content Include="app\static\app\content\bootstrap.css" />
     <Content Include="app\static\app\content\bootstrap.min.css" />
     <Content Include="app\static\app\content\site.css" />
