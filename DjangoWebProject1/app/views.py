@@ -10,6 +10,18 @@ from django.contrib import messages
 from django.shortcuts import redirect, render
 from .forms import CustomUserCreationForm
 
+from rest_framework.views import APIView
+from rest_framework.response import Response
+from django.views.decorators.csrf import csrf_exempt
+from braces.views import CsrfExemptMixin
+
+
+class Object(CsrfExemptMixin, APIView):
+    authentication_classes = []
+
+    def post(self, request, format=None):
+        return Response({'received data': request.data})
+
 def home(request):
     """Renders the home page."""
     assert isinstance(request, HttpRequest)
